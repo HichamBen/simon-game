@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+header {
+    font-family: "Press Start 2P", cursive;
+    background-color: rgb(6, 6, 56);
+    padding: 50px;
+    text-align: center;
+    color: cornsilk;
+}
+
+main {
+    background-color: rgb(8, 8, 82);
+    padding: 50px;
+}
+
+footer {
+    background-color: rgb(6, 6, 56);
+    padding: 15px;
+    text-align: center;
+    color: cornsilk;
+}
+
+.game {
+    background-color: rgb(24, 20, 20);
+    width: 550px;
+    height: 450px;
+    margin: auto;
+    border-radius: 35%;
+    position: relative;
+    pointer-events: none;
+}
+
+.game>div {
+    width: 255px;
+    height: 210px;
+    position: absolute;
+    pointer-events: auto;
+
+}
+
+.active-color {
+    opacity: 0.8;
+    box-shadow: 5px 5px 5px whitesmoke,
+        -5px -5px 5px whitesmoke;
+}
+
+.gameOver {
+    background-color: rgb(214, 90, 90);
+}
+
+#green {
+    background-color: rgb(30, 134, 53);
+    top: 10px;
+    left: 10px;
+    border-radius: 75% 10px 0 10px;
+    cursor: pointer;
+}
+
+#red {
+    background-color: rgb(214, 49, 20);
+    top: 10px;
+    right: 10px;
+    border-radius: 10px 75% 10px 0;
+    cursor: pointer;
+}
+
+
+#yellow {
+    background-color: rgb(247, 250, 55);
+    bottom: 10px;
+    left: 10px;
+    border-radius: 10px 0 10px 75%;
+    cursor: pointer;
+}
+
+
+#blue {
+    background-color: rgb(30, 78, 134);
+    bottom: 10px;
+    right: 10px;
+    border-radius: 0 10px 75% 10px;
+    cursor: pointer;
+}
+
+
+#controls {
+    background-color: rgb(24, 20, 20);
+    width: 150px;
+    height: 100px;
+    padding: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    display: grid;
+    grid-template-columns: auto;
+    align-content: space-between;
+}
+
+button {
+    border: none;
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+    justify-self: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.hoverS {
+    background-color: rgb(161, 228, 161);
+    color: rgb(10, 97, 14);
+}
+
+.off-on {
+    color: blanchedalmond;
+}
+
+input {
+    pointer-events: auto;
+    justify-self: center;
+}
